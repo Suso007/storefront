@@ -349,7 +349,7 @@ export default function AccountPage() {
             <Card className="p-1 md:p-2">
               <CardHeader className="p-1.5 md:p-3">
                 <CardTitle className="text-sm md:text-base">Need Help?</CardTitle>
-                <CardDescription className="text-xs">We're here to assist you</CardDescription>
+                <CardDescription className="text-xs">We&apos;re here to assist you</CardDescription>
               </CardHeader>
               <CardContent className="space-y-0.5 md:space-y-2 p-1.5 md:p-3 pt-0 md:pt-0">
                 <Button variant="outline" className="w-full justify-start text-xs h-8 md:h-10">

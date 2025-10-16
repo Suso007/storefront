@@ -8,14 +8,6 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Skeleton } from "@/components/ui/skeleton";
 import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
-import {
   ShoppingCart,
   Plus,
   Minus,
@@ -667,7 +659,7 @@ export default function CartPage() {
               </div>
               <h1 className="text-xl md:text-2xl lg:text-3xl font-bold mb-3 md:mb-4">Your cart is empty</h1>
               <p className="text-muted-foreground mb-6 md:mb-8 max-w-md mx-auto text-sm md:text-base px-4">
-                Looks like you haven't added any items to your cart yet. 
+                Looks like you haven&apos;t added any items to your cart yet. 
                 Start exploring our beautiful handcrafted products!
               </p>
               <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-4">

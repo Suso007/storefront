@@ -483,7 +483,7 @@ export default function ArtisansPage() {
               Want to Join Our Artisan Community?
             </h2>
             <p className="text-xs md:text-sm text-muted-foreground">
-              If you're a skilled artisan looking to showcase your work, we'd
+              If you&apos;re a skilled artisan looking to showcase your work, we&apos;d
               love to hear from you!
             </p>
             <Button className="rounded-full bg-primary hover:bg-primary/90">

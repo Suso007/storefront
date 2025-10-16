@@ -22,18 +22,11 @@ import {
   Truck,
   Shield,
   MapPin,
-  Phone,
-  Mail,
-  User,
-  Calendar,
   Lock,
   CheckCircle,
-  AlertCircle,
   Gift,
   Tag,
-  Star,
   Edit3,
-  X,
 } from "lucide-react";
 import Header from "../myCopmonent/Header";
 

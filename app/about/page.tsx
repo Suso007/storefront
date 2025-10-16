@@ -160,7 +160,7 @@ export default function AboutPage() {
                 <div className="space-y-3 text-xs md:text-sm text-muted-foreground leading-relaxed">
                   <p>
                     Founded in 2020, Inloom was born from a passion to preserve
-                    and promote India's rich heritage of handicrafts. We
+                    and promote India&apos;s rich heritage of handicrafts. We
                     witnessed the decline of traditional arts and the struggles
                     of talented artisans who lacked market access.
                   </p>
@@ -250,7 +250,7 @@ export default function AboutPage() {
                 Get in Touch
               </h2>
               <p className="text-xs md:text-sm text-muted-foreground max-w-2xl mx-auto">
-                We'd love to hear from you. Reach out to us through any of these
+                We&apos;d love to hear from you. Reach out to us through any of these
                 channels.
               </p>
             </div>

@@ -199,7 +199,7 @@ export default function CustomerReviews() {
 
                           {/* Review Text */}
                           <blockquote className="text-foreground leading-relaxed text-sm md:text-base">
-                            "{review.review}"
+                            &ldquo;{review.review}&rdquo;
                           </blockquote>
 
                           {/* Product Info */}

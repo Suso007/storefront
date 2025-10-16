@@ -10,10 +10,8 @@ import {
   Heart, 
   ShoppingCart, 
   Eye, 
-  Star, 
-  SlidersHorizontal, 
-  X, 
-  ChevronDown,
+  Star,
+  SlidersHorizontal,
   MapPin,
   Phone,
   Mail,
@@ -807,7 +805,7 @@ export default function SellerShopPage() {
         <div className="min-h-screen bg-background flex items-center justify-center">
           <div className="text-center">
             <h1 className="text-2xl font-bold mb-2">Seller Not Found</h1>
-            <p className="text-muted-foreground mb-4">The seller you're looking for doesn't exist.</p>
+            <p className="text-muted-foreground mb-4">The seller you&apos;re looking for doesn&apos;t exist.</p>
             <Button onClick={() => router.push('/shop')}>
               Back to Shop
             </Button>
@@ -921,7 +919,7 @@ export default function SellerShopPage() {
               {/* No More Products */}
               {!hasMore && displayedProducts.length > 0 && (
                 <div className="text-center py-6 md:py-8 text-muted-foreground text-xs md:text-sm">
-                  You've reached the end of {seller.businessName}'s products
+                  You&apos;ve reached the end of {seller.businessName}&apos;s products
                 </div>
               )}
 

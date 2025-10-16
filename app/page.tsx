@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Header from "./myCopmonent/Header";
 import Hero from "./myCopmonent/Hero";
 import NewArrivals from "./myCopmonent/NewArrivals";

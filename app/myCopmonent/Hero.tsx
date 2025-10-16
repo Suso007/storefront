@@ -3,7 +3,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles, Heart } from "lucide-react";
 import Link from "next/link";
-import Header from "./Header";
 
 export default function Hero() {
   return (

@@ -6,7 +6,7 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
-import { Heart, ShoppingCart, Eye, Star, SlidersHorizontal, X, ChevronDown } from "lucide-react";
+import { Heart, ShoppingCart, Eye, Star, SlidersHorizontal } from "lucide-react";
 import {
   Sheet,
   SheetContent,
@@ -570,7 +570,7 @@ export default function ShopPage() {
             {/* No More Products */}
             {!hasMore && displayedProducts.length > 0 && (
               <div className="text-center py-8 text-muted-foreground text-sm">
-                You've reached the end of the catalog
+                You&apos;ve reached the end of the catalog
               </div>
             )}
 

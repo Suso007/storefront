@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useParams, useRouter } from "next/navigation";
+import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -321,10 +322,11 @@ export default function ProductPage() {
                 >
                   {product.images.map((image, index) => (
                     <div key={index} className="relative flex-shrink-0 w-full aspect-square bg-muted rounded-lg overflow-hidden snap-center">
-                      <img
+                      <Image
                         src={image}
                         alt={`${product.name} view ${index + 1}`}
-                        className="w-full h-full object-cover"
+                        fill
+                        className="object-cover"
                       />
                       
                       {/* Badges for first image only */}
@@ -390,10 +392,11 @@ export default function ProductPage() {
             <div className="hidden lg:block space-y-4">
               {/* Main Image */}
               <div className="relative aspect-square bg-muted rounded-lg overflow-hidden group">
-                <img
+                <Image
                   src={product.images[selectedImageIndex]}
                   alt={product.name}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 
                 {/* Navigation Buttons */}
@@ -448,9 +451,11 @@ export default function ProductPage() {
                         : "border-transparent hover:border-muted-foreground"
                     }`}
                   >
-                    <img
+                    <Image
                       src={image}
                       alt={`${product.name} view ${index + 1}`}
+                      width={100}
+                      height={100}
                       className="w-full h-full object-cover"
                     />
                   </button>
@@ -816,11 +821,13 @@ export default function ProductPage() {
                           {review.images && (
                             <div className="flex gap-2">
                               {review.images.map((image, index) => (
-                                <img
+                                <Image
                                   key={index}
                                   src={image}
                                   alt={`Review image ${index + 1}`}
-                                  className="w-16 h-16 object-cover rounded-md"
+                                  width={64}
+                                  height={64}
+                                  className="object-cover rounded-md"
                                 />
                               ))}
                             </div>
@@ -841,11 +848,12 @@ export default function ProductPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {Array.from({ length: 4 }).map((_, index) => (
               <Card key={index} className="overflow-hidden group cursor-pointer hover:shadow-lg transition-all duration-300">
-                <div className="aspect-square bg-muted">
-                  <img
+                <div className="aspect-square bg-muted relative">
+                  <Image
                     src={`https://images.unsplash.com/photo-${1599643478518 + index + 10}?w=300&h=300&fit=crop`}
                     alt={`Related product ${index + 1}`}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <CardContent className="p-3">
